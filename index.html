@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom Events</title>
+</head>
+<body>
+<h1>My inner text</h1>
+<input type="text">
+<script type="text/javascript">
+ 		
+ 		
+ 	 	var myH1 = document.getElementsByTagName("h1")[0]
+ 	 	var myInput = document.getElementsByTagName("input")[0]
+
+ 		
+ 		
+ 		myInput.addEventListener("keyup", function(){
+ 			console.log(myInput.value);
+ 			myH1.innerText = myInput.value
+ 		})
+
+ 	
+ 	 	
+ 	</script>
+</body>
+</html>
